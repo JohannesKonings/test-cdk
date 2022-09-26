@@ -7,7 +7,7 @@ tasks:
     before: |
       cd ../aws-cdk
     init: |
-      cat README.md
+      echo init
     #   echo npm run build
     command: |
-      cat README.md
+      echo command
