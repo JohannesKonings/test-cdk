@@ -3,3 +3,13 @@ additionalRepositories:
      # checkoutLocation is optional and relative to /workspaces.
      # by default the location defaults to the repository name.
     checkoutLocation: aws-cdk
+
+tasks:
+  - name: aws-cdk
+    before: |
+      cd ../aws-cdk
+    # init: |
+    #   echo npm install
+    #   echo npm run build
+    command: |
+      cat README.md
